@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="formatter.controller.PrimaryController">
+   <children>
+      <MenuBar>
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="preferencesBtn" mnemonicParsing="false" text="Preferences..." />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="quitBtn" mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <HBox alignment="CENTER_LEFT" spacing="15.0">
+         <children>
+            <Label prefWidth="66.0" text="Input File">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="inputFileTxt" disable="true" editable="false" minWidth="250.0" prefHeight="25.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="examineInputBtn" minWidth="100.0" mnemonicParsing="false" text="Examine" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" spacing="15.0">
+         <children>
+            <Label prefWidth="66.0" text="Output File">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="outputFileTxt" disable="true" editable="false" minWidth="250.0" prefHeight="25.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="examineOutputBtn" minWidth="100.0" mnemonicParsing="false" text="Examine" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="15.0" HBox.hgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Label fx:id="warningTxt" text="The directories are not valid" textFill="#cc4040" visible="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" spacing="15.0">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Button fx:id="formatBtn" minWidth="100.0" mnemonicParsing="false" text="Format" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

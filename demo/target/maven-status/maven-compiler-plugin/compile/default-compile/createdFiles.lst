@@ -1,0 +1,8 @@
+formatter\controller\PrimaryController.class
+formatter\inout\InOut.class
+formatter\Main.class
+formatter\model\FormatterSettings.class
+module-info.class
+formatter\model\SubtitleFormatter.class
+formatter\controller\PreferencesController.class
+formatter\SubtitleFormatterApp.class

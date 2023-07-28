@@ -1,0 +1,1 @@
+{"maxLenSubtitle":79,"maxLenLine":30,"nearSplittpointThreshold":15,"preferedSplitPoints":[",",")"],"endOfSentence":[":",".","?","!","]"],"nextToSentence":[" ","\r","\n"],"defInName":"data/original.txt","defOutName":"data/result.txt"}
